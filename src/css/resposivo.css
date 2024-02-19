@@ -1,0 +1,11 @@
+@media (max-width: 400px){
+    main .box{
+        width: 100%;
+        margin-top: 0;
+        background-color: hsl(0, 0%, 8%);
+    }
+
+    main .box .links a:hover{
+        background-color: #B026FF;
+    }
+}
