@@ -4,8 +4,17 @@
     box-sizing: border-box;
 }
 
+:root {
+    --fonte-padrao: 'Inter', sans-serif;
+    --cor-da-caixa: hsl(0, 0%, 12%);
+    --cor-de-fundo: hsl(0, 0%, 8%);
+    --cor-dos-links: hsl(0, 0%, 20%);
+    --cor-secundaria: #a19ba5;
+}
+
 body {
     background-color: hsl(0, 0%, 8%);
+    font-family: var(--fonte-padrao);
 }
 
 main {
@@ -13,7 +22,7 @@ main {
 }
 
 main .box{
-    background-color: hsl(0, 0%, 12%);
+    background-color: var(--cor-da-caixa);
     width: 450px;
     margin: auto;
     margin-top: 50px;
@@ -28,7 +37,6 @@ main .box .intro{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Inter', sans-serif;
 }
 
 main .box .intro img{
@@ -40,11 +48,11 @@ main .box .intro img{
 }
 
 main .box .intro h1, p{
-    color: rgb(220, 195, 235);
+    color: white;
 }
 
 main .box .intro h2 {
-    color: #B026FF;
+    color: var(--cor-secundaria);
 }
 
 main .box .links{
@@ -57,17 +65,17 @@ main .box .links{
 
 main .box .links a{
     padding: 20px;
-    background-color: hsl(0, 0%, 20%);
+    background-color: var(--cor-dos-links);
     width: 300px;
     border-radius: 15px;
     text-align: center;
     text-decoration: none;
-    font-family: 'Inter', sans-serif;
     font-weight: bolder;
     color: white;
 }
 
 main .box .links a:hover{
-    background-color: rgb(220, 195, 235);
+    background-color: var(--cor-secundaria);
+    color: black;
     transition: ease-in 0.3s;
 }
